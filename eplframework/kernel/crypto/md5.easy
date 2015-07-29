@@ -1,0 +1,6 @@
+EPLFramework.Kernel.Crypto.MD5
+{
+	Sum(text string) (string) {
+		return md5.Sum(text)
+	}
+}

@@ -1,0 +1,4 @@
+EPLFramework.Kernel.Help
+{
+	const Version string = "0.0.1"
+}

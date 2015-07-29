@@ -1,0 +1,22 @@
+HelloWorld.Main
+{
+	use EPLFramework.Kernel.Help
+
+	construct() {
+		print "Hello World with EPL version: " + Help.Version
+		
+		print stringFormatting()
+		print "Hashed string is: HelloWorld. Hash: " + md5SumTest("HelloWorld")
+		
+		galaxy = new Galaxy
+	}
+	
+	stringFormatting() (string) {
+		return fmt.Sprintf("This is %s %d", fmt.Sprintf("%s", "String Formatting"), 101)
+	}
+	
+	md5SumTest(text string) (string) {
+		md5 = new EPLFramework.Kernel.Crypto.MD5
+		return md5.Sum(text)
+	}
+}

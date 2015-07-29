@@ -1,0 +1,6 @@
+HelloWorld.Galaxy
+{
+	construct() {
+		print "Galaxy Here"
+	}
+}
